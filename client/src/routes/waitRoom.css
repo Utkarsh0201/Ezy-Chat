@@ -1,0 +1,198 @@
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  flex-direction: row;
+}
+
+.taskbar {
+  height: 16vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  margin-left: 5%;
+  width: 135%;
+}
+
+.title {
+  font-size: 38px;
+  font-family: cursive;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.title > span {
+  color: gray;
+}
+
+.logo {
+  height: 85%;
+  width: 7.5%;
+}
+.logo img {
+  height: 100%;
+  width: 100%;
+}
+
+.one {
+  height: 100%;
+  width: 100%;
+}
+
+.videocontbox {
+  display: flex;
+  height: 100%;
+  flex: 2.3;
+  flex-direction: column;
+}
+
+.videobox {
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.joinbox {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.joinbox > p {
+  font-size: 30px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.contr {
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.ic {
+  border-radius: 30px;
+  cursor: pointer;
+  padding: 1%;
+  background-color: black;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.btnBox {
+  height: 14%;
+  width: 80%;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.joinbtn {
+  background-color: #1a73e8;
+  border: 2px solid black;
+  padding: 15px;
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.userDetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 35vw;
+}
+
+.username {
+  font-size: 25px;
+  font-family: cursive;
+  margin-right: 20px;
+}
+
+.userimg {
+  width: 15%;
+  height: 15%;
+}
+
+.userimg > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 550px) {
+  .title {
+    font-size: 20px;
+    width: 20vw;
+  }
+  .joinbtn {
+    padding: 12px;
+  }
+  .logo {
+    height: 55%;
+    width: 10%;
+  }
+  .btnBox {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .joinbox > p {
+    font-size: 22px;
+  }
+  .joinbox > h4 {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 550px) and (min-width: 300px) {
+  .title {
+    font-size: 20px;
+    width: 20vw;
+  }
+  .joinbtn {
+    padding: 12px;
+  }
+  .logo {
+    height: 55%;
+    width: 40%;
+  }
+  .userDetails {
+    margin-left: 15vw;
+  }
+  .btnBox {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .joinbox > p {
+    font-size: 18px;
+  }
+  .joinbox > h4 {
+    font-size: 12px;
+  }
+  .videocontbox {
+    display: flex;
+    height: 100%;
+    flex: 2;
+    flex-direction: column;
+  }
+}
